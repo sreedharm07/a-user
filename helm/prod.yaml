@@ -2,6 +2,7 @@ component: user
 service_type: ClusterIP
 targetPort: 8080
 PARAMETERS: "user.prod.DOCUMENTDB,DOCUMENTDB user.prod.redishost,REDIS_HOST user.pod.mongo_url,MONGO_URL"
+env: prod
 schema:
   enabled: true
   db_type: MONGODB
